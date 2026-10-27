@@ -1,0 +1,50 @@
+import java.util.Scanner;//core package :start with java
+
+
+	 
+public class Test {
+	 
+	//This program includes basic of java .
+	public static void main(String[] args)
+	{	
+		/*
+		 •	Declare and initialize variables. 
+		 •	Use different data types. 
+		 •	Display output using System.out.println(). 
+		 •	Read user input using the Scanner class. 
+		 •	Display output and Read user input using (JOptionPane);  
+		 -------------------------------------------------------------		 		 
+		  */
+		
+		Scanner input = new Scanner(System.in);//
+		/*prepare variable to read value from user ,you can change
+		the name of object (input): Myinput ,
+		 X or any thing from your choice.
+		 
+		    input.nextInt();
+		    input.nextDouble();
+		    input.next();
+		    input.nextLine();
+		    input.next().charAt(0);
+		    input.nextBoolean();
+		    ________________________________________
+	 
+		 */
+
+        System.out.print("Enter your name: "); 
+        
+        String name = input.nextLine();//read String Line.
+        System.out.print("Enter your Average: "); //output
+        double Average = input.nextDouble();
+        System.out.print("Enter your Grades "); //output
+        int Grade1 =  input.nextInt();
+        int Grade2 =  input.nextInt();
+        int Sum = Grade1+Grade2;
+        
+        System.out.print("your name is \t"+ name+"\n");//output 
+        System.out.println("\" Sum \" Of your numbers : "+Sum);//output
+
+        input.close();
+	}
+	}
+
